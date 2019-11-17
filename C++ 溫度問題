@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+        int tem;
+    int set;
+    cout << "若要華氏轉攝氏請按1，攝氏轉華氏請按2" << "\n";
+    cin >> set;
+    while(set > 2 || set < 1){
+        cout << "防像你這種87用的" << "\n";
+        cin >> set;
+    }
+    cin >> tem;
+    if(set == 1){
+        cout <<  (tem-32)*5/9 << "\n";
+    }else if(set == 2){
+        cout << tem*9/5+32 << "\n";
+    }else
+        cout << "喔是喔" << "\n";
+}
